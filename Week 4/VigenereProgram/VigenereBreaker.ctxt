@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=VigenereBreaker
+comment1.params=message\ whichSlice\ totalSlices
+comment1.target=java.lang.String\ sliceString(java.lang.String,\ int,\ int)
+comment2.params=encrypted\ klength\ mostCommon
+comment2.target=int[]\ tryKeyLength(java.lang.String,\ int,\ char)
+comment3.params=
+comment3.target=void\ breakVigenere()
+comment4.params=fr
+comment4.target=java.util.HashSet\ readDictionary(edu.duke.FileResource)
+comment4.text=public\ void\ oldBreak\ ()\ {\n\ \ \ \ \ \ \ \ FileResource\ fr\ \=\ new\ FileResource();\n\ \ \ \ \ \ \ \ String\ encryptedMessage\ \=\ fr.asString();\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ FileResource\ fr2\ \=\ new\ FileResource();\n\ \ \ \ \ \ \ \ HashSet<String>\ dictionary\ \=\ readDictionary(fr2);\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ String\ decrypted\ \=\ breakForLanguage(encryptedMessage,\ dictionary);\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ System.out.println("//\ \ \ \ \ \ //\ \ \ \ \ \ //\ \ \ \ \ \ //\ \ \ \ \ \ //");\n\ \ \ \ \ \ \ \ System.out.println("\\n");\n\ \ \ \ \ \ \ \ System.out.println(decrypted);\n\ \ \ \ \ \ \ \ System.out.println("//FINSIHED//");\n\ \ \ \ \ \ \ \ \n\ \ \ \ }\n\ \ \ \ \n\ \ \ \ public\ void\ oldOldBreak(){\n\ \ \ \ \ \ \ \ FileResource\ fr\ \=\ new\ FileResource();\n\ \ \ \ \ \ \ \ String\ encryptedMessage\ \=\ fr.asString();\n\ \ \ \ \ \ \ \ FileResource\ fr2\ \=\ new\ FileResource();\n\ \ \ \ \ \ \ \ HashSet<String>\ dictionary\ \=\ readDictionary(fr2);\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ int\ keyLength\ \=\ 38;\n\ \ \ \ \ \ \ \ int[]\ key\ \=\ tryKeyLength(encryptedMessage,\ keyLength,\ 'e');\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ System.out.println("//\ \ \ \ \ \ //\ \ \ \ \ \ //\ \ \ \ \ \ //\ \ \ \ \ \ //\ \ \ \ \ \ //");\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ VigenereCipher\ vc\ \=\ new\ VigenereCipher(key);\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ String\ answer\ \=\ vc.decrypt(encryptedMessage);\n\ \ \ \ \ \ \ \ int\ count\ \=\ countWords(answer,\ dictionary);\n\ \ \ \ \ \ \ \ System.out.println("Valid\ words\ in\ message\:\ "\ +\ count);\n\ \ \ \ \ \ \ \ System.out.println(answer);\n\ \ \ \ }\n
+comment5.params=message\ dictionary
+comment5.target=int\ countWords(java.lang.String,\ java.util.HashSet)
+comment6.params=encrypted\ dictionary
+comment6.target=java.lang.String\ breakForLanguage(java.lang.String,\ java.util.HashSet)
+comment7.params=dictionary
+comment7.target=char\ mostCommonCharIn(java.util.HashSet)
+comment8.params=encrypted\ languages
+comment8.target=void\ breakForAllLangs(java.lang.String,\ java.util.HashMap)
+numComments=9
