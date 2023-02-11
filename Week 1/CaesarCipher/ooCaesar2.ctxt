@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=ooCaesar2
+comment0.text=\n\ Write\ a\ description\ of\ ooCaesar2\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=key1\ key2
+comment1.target=ooCaesar2(int,\ int)
+comment2.params=input
+comment2.target=java.lang.String\ encryptTwoKeys(java.lang.String)
+comment3.params=input
+comment3.target=java.lang.String\ decryptTwoKeys(java.lang.String)
+numComments=4
